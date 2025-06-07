@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!--<form action="javascript:recibeform()" method="post" autocomplete="off" >  -->
+	<form action="./procesaform.php" method="post" autocomplete="off" >
+
+    <input type="color" list="List_color">
+  <datalist id="items">
+    <option value="#847283"></option>
+    <option value="#238485"></option>
+  </datalist><br><br>
+
+    <input type="date" list="List_Fecha" value="2024-02-23">
+  <datalist id="items">
+    <option value="2024-02-23">23 de Febrero</option>
+    <option value="2024-03-23">23 de Marzo</option>
+    <option value="2024-04-23">23 de Abril</option>
+  </datalist><br><br>
+
+     <input type="range" list="List_Ranking" min="1" max="5" value="3">
+  <output></output>
+  <datalist id="items">
+    <option value="1">Muy satisfecho.</option>
+    <option value="2">Satisfecho.</option>
+    <option value="3">Indiferente.</option>
+    <option value="4">Decepcionado.</option>
+    <option value="5">Muy decepcionado.</option>
+  </datalist><br><br>
+
+ <input type="text" list="items">
+  <datalist id="items">
+    <option value="manzdev">ManzDev</option>
+    <option value="afor_digital">Afor_digital</option>
+    <option value="padawanstrainer">PadawansTrainer</option>
+    <option value="chrisvdev">ChrisvDev</option>
+  </datalist><br><br>
+
+
+     <label for="opciones">Selecciona la opción deseada:</label>
+  <select>
+    <optgroup label="Categoría 1">
+      <option value="1">Opción 1</option>
+      <option value="2">Opción 2</option>
+    </optgroup>
+    <optgroup label="Categoría 2">
+      <option value="3">Opción 3</option>
+      <option value="4">Opción 4</option>
+      <option value="5">Opción 5</option>
+    </optgroup>
+  </select><br><br>
+
+
+     <label for="opciones">Selecciona la opción deseada:</label>
+  <select>
+    <option disabled selected>-Elige una opción-</option>
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="3">Opción 3</option>
+    <option value="4">Opción 4</option>
+    <option value="5">Opción 5</option>
+  </select><br><br>
+
+    <label for="edColor">Selecciona el color deseado:</label>
+    <input type="color" value="#1BF44A"><br>
+
+   <input type="radio" name="category" value="user" checked> Particular
+  <input type="radio" name="category" value="business"> Empresa
+  <br><br>
+
+		<label for="nombre">Escribe tu nombre:</label>
+		<input type="text" name="nombre" value="" placeholder="escribe tu nombre"/>
+		<br/>
+		<br/><br/>
+		<label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+
+  <br/><br />
+		<input type="submit" value="Enviar" />
+		  <input type="reset" value="Reset">
+	</form>
+
+	<script type="text/javascript">
+		function recibeform(){
+			alert("Formulario recibido");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+input,
+textarea {
+  padding: 5px;
+  color: #fff;
+}
+
+::placeholder {
+  color: darkgreen;
+}
+
+:is(input, textarea):invalid {
+  background: red;
+}
+
+:is(input, textarea):valid {
+  background: green;
+}
+
+/*para la curp*/
+#resultado {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+#resultado.ok {
+    background-color: green;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+  <h1>Formulario con diferentes Inputs</h1>
+
+  <form action="./procesaform.php" method="post" autocomplete="off">
+
+     <!-- Reseña -->
+     <label for="Ecuesta">Encuesta:</label>
+     <input type="range" list="items" min="1" max="5" value="3">
+     <output></output>
+     <datalist id="items">
+       <option value="1">Muy satisfecho.</option>
+       <option value="2">Satisfecho.</option>
+       <option value="3">Indiferente.</option>
+       <option value="4">Decepcionado.</option>
+       <option value="5">Muy decepcionado.</option>
+     </datalist><br><br>
+
+    <!-- Nombre completo -->
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required><br><br>
+
+    <!-- Correo electrónico -->
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required><br><br>
+
+    <!-- Contraseña -->
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" placeholder="Crea una contraseña" required><br><br>
+
+    <!-- Teléfono -->
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="(123) 456-7890" pattern="^\(\d{3}\) \d{3}-\d{4}$"><br><br>
+
+    <!-- Edad -->
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="18" max="120" required><br><br>
+
+    <!-- Fecha de nacimiento -->
+    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="2000-01-01" required><br><br>
+
+    <!-- Género -->
+    <label>Género:</label>
+    <input type="radio" id="masculino" name="genero" value="Masculino" checked>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="femenino" name="genero" value="Femenino">
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="otro" name="genero" value="Otro">
+    <label for="otro">Otro</label><br><br>
+
+    <!-- Aceptación de términos -->
+    <label for="terminos">Acepto los términos y condiciones:</label>
+    <input type="checkbox" id="terminos" name="terminos" required><br><br>
+
+    <!-- Selección de color -->
+    <label for="color-preferido">Color preferido:</label>
+    <input type="color" id="color-preferido" name="color-preferido" value="#ff0000"><br><br>
+
+    <!-- Subir Foto de Perfil -->
+    <label for="foto">Sube una Foto de Perfil:</label>
+    <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+    <!-- Selector de archivo -->
+    <label for="documento">Sube tu Documento de Identidad:</label>
+    <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png"><br><br>
+
+    <!-- Selección de preferencia de contacto -->
+    <label for="preferencia-contacto">Preferencia de Contacto:</label>
+    <select id="preferencia-contacto" name="preferencia-contacto">
+      <option value="email">Correo Electrónico</option>
+      <option value="telefono">Teléfono</option>
+      <option value="whatsapp">WhatsApp</option>
+    </select><br><br>
+
+      <!-- Input para selección de fecha y hora -->
+    <label for="evento-fecha">Fecha y Hora del Evento:</label>
+    <input type="datetime-local" id="evento-fecha" name="evento-fecha"><br><br>
+
+    <!-- indeterminate -->
+    <input type="checkbox" id="indeterminate"> Mostrar nombre real de usuario<br><br>
+
+
+    <!-- Comentarios -->
+    <label for="comentarios">Comentarios adicionales:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea><br><br>
+
+  
+    <!-- Enviar formulario -->
+    <input type="submit" value="Registrar">
+    <input type="reset" value="Resetear">
+
+  </form>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="biblioteca.js"></script>
+	<title>Uso de clases en javaScript</title>
+</head>
+<body>
+	<h1>clases en javaScript</h1>
+	<div id="divPOO"class="detalle"></div>
+	<div id="divSegundo"class="detalle"></div>
+
+    
+
+
+	<!--llamadas a funciones js -->
+	<script>
+		const mario = new Personaje("Mario");// '¡Bienvenido/a,Mario!'
+		const divRes = document.querySelectorAll("div")[0];//[divPoo,divSegundo]
+		if(divRes){
+			//divRes.innerHTML = "Hola " + mario.hola();
+			divRes.innerHTML = `Hola ${mario.hola()}`;
+			diveRes.innerHTML = "<br>cadena JSON"+JSON.stringfy(mario);
+
+			diveRes.innerHTML +="<br> Hijos del body: " + document.body.chilNodes;
+			diveRes.innerHTML +="<br> Primer hijo del body: " + document.body.firstElementChild;
+			diveRes.innerHTML +="<br> Ultimo hijo del body: " + document.body.lastElementChild;
+			diveRes.innerHTML +="<br> Hermano anterior del body: " + document.body.;
+
+
+ 
+
+		}
+
+	</script>
+	<script src="juego.js"></script>
+</body>
+</html>
